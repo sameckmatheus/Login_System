@@ -12,15 +12,15 @@ window.iconbitmap("favicon.ico")
 window.resizable(False, False)
 
 # img box-selector
-img = PhotoImage(file="background.png")
+img = PhotoImage(file="log.png")
 Label_img = customtkinter.CTkLabel(master=window, image=img)
-Label_img.place(x=5, y=65)
+Label_img.place(x=5, y=5)
 
 # frame-box in window-box setup
 frame = customtkinter.CTkFrame(master=window, width=350, height=395)
 frame.pack(side=RIGHT)
 
-# login elements
+# frame widgets
 
 
 window.mainloop()
