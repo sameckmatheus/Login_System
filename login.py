@@ -1,5 +1,6 @@
 import customtkinter # pkg importation
 from tkinter import * # pkg call
+from PIL import Image, ImageTk
 
 customtkinter.set_appearance_mode("dark")
 customtkinter.set_default_color_theme("dark-blue")
@@ -21,6 +22,9 @@ frame = customtkinter.CTkFrame(master=window, width=350, height=395)
 frame.pack(side=RIGHT)
 
 # frame widgets
+label = customtkinter.CTkLabel(master=frame, text="Sistema de Login")
+label.place(x=25, y=5)
 
+input1 = customtkinter.CTkEntry(master=frame, placeholder_text="Username")
 
-window.mainloop()
+window.mainloop()                                                
