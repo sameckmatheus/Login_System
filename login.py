@@ -13,7 +13,7 @@ window.iconbitmap("favicon.ico")
 window.resizable(False, False)
 
 # img box-selector
-img = PhotoImage(file="log.png")
+img = PhotoImage(file="images/log.png")
 Label_img = customtkinter.CTkLabel(master=window, image=img)
 Label_img.place(x=25, y=65)
 Label_img.configure(text='')

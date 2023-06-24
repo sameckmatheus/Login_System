@@ -11,7 +11,8 @@
     *   Um link para o usuário recuperar sua senha em caso de esquecimento
 ```
 
-<img alt="" src="https://drive.google.com/file/d/1jDgvL0DnPsdrWLzWbZhjVMJv-GcX9lWz/view?usp=sharing"/>
+<img alt="" src="images/readme.png"/>
+
 <div>
     <p align="justify">
         Ao clicar no botão de login, o programa deve verificar se o nome de usuário ou e-mail e a senha estão corretos. Se estiverem corretos, o programa deve permitir o acesso do usuário a uma área restrita do sistema. Caso contrário, o programa deve exibir uma mensagem de erro e pedir que o usuário tente novamente.
