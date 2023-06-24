@@ -15,7 +15,10 @@ window.resizable(False, False)
 # img box-selector
 img = PhotoImage(file="log.png")
 Label_img = customtkinter.CTkLabel(master=window, image=img)
-Label_img.place(x=5, y=5)
+Label_img.place(x=25, y=65)
+Label_img.configure(text='')
+
+label_title = customtkinter.CTkLabel(master=window, text="Bem Vindos!", font=("JetBrains mono", 20)).place(x=105, y=10)
 
 # frame-box in window-box setup
 frame = customtkinter.CTkFrame(master=window, width=350, height=396)
@@ -23,7 +26,7 @@ frame.pack(side=RIGHT)
 
 # frame widgets
 label = customtkinter.CTkLabel(master=frame, text="Sistema de Login", font=("JetBrains mono", 20))
-label.place(x=25, y=5)
+label.place(x=70, y=5)
 
 username_input = customtkinter.CTkEntry(master=frame, 
     placeholder_text="Username", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
