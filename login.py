@@ -18,21 +18,27 @@ Label_img = customtkinter.CTkLabel(master=window, image=img)
 Label_img.place(x=5, y=5)
 
 # frame-box in window-box setup
-frame = customtkinter.CTkFrame(master=window, width=350, height=395)
+frame = customtkinter.CTkFrame(master=window, width=350, height=396)
 frame.pack(side=RIGHT)
 
 # frame widgets
-label = customtkinter.CTkLabel(master=frame, text="Sistema de Login", text_font=("JetBrains mono", 20))
+label = customtkinter.CTkLabel(master=frame, text="Sistema de Login", font=("JetBrains mono", 20))
 label.place(x=25, y=5)
 
 username_input = customtkinter.CTkEntry(master=frame, 
-    placeholder_text="Username", 
-    width=300, 
-    text_font=("JetBrains mono", 14)).place(x=25, y=105)
+    placeholder_text="Username", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
 
 username_label = customtkinter.CTkLabel(master=frame, 
-    text="*Preencha o campo acima para continuar",
-    text_color="blue", 
-    text_font=("JetBrains mono", 8)).place(x=25, y=135)
+    text="*Preencha o campo acima para continuar",text_color="orange", font=("JetBrains mono", 8)).place(x=25, y=135)
 
+pass_input = customtkinter.CTkEntry(master=frame, 
+    placeholder_text="Password", width=300, font=("JetBrains mono", 14)).place(x=25, y=175)
+
+pass_label = customtkinter.CTkLabel(master=frame, 
+    text="*Preencha o campo acima para continuar", text_color="orange", font=("JetBrains mono", 8)).place(x=25, y=205)
+
+checkbox = customtkinter.CTkCheckBox(master=frame, text="Lembre de mim!", font=("JetBrains mono", 10)).place(x=25, y=245)
+button = customtkinter.CTkButton(master=frame, text="Login", width=300, font=("JetBrains mono", 10)).place(x=25, y=305)
+
+# open window
 window.mainloop()                                                
