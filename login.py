@@ -28,7 +28,7 @@ frame.pack(side=RIGHT)
 label = ve.CTkLabel(master=frame, text="Sistema de Login", font=("JetBrains mono", 20))
 label.place(x=70, y=5)
 
-username_input = ve.CTkEntry(master=frame, 
+username_entry = ve.CTkEntry(master=frame, 
     placeholder_text="Username", 
     width=300, 
     font=("JetBrains mono", 14)).place(x=25, y=105)
@@ -38,7 +38,7 @@ username_label = ve.CTkLabel(master=frame,
     text_color="orange", 
     font=("JetBrains mono", 8)).place(x=25, y=135)
 
-pass_input = ve.CTkEntry(master=frame, 
+pass_entry = ve.CTkEntry(master=frame, 
     placeholder_text="Password", 
     width=300, 
     font=("JetBrains mono", 14), show="°").place(x=25, y=175)
