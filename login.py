@@ -52,7 +52,7 @@ checkbox = ve.CTkCheckBox(master=frame,
     text="Lembre de mim!", 
     font=("JetBrains mono", 10)).place(x=25, y=245)
 
-button = ve.CTkButton(master=frame, 
+login_button = ve.CTkButton(master=frame, 
     text="Login", 
     width=300, 
     font=("JetBrains mono", 10)).place(x=25, y=305)
