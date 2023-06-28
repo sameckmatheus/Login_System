@@ -41,7 +41,7 @@ username_label = customtkinter.CTkLabel(master=frame,
 pass_input = customtkinter.CTkEntry(master=frame, 
     placeholder_text="Password", 
     width=300, 
-    font=("JetBrains mono", 14)).place(x=25, y=175)
+    font=("JetBrains mono", 14), show="°").place(x=25, y=175)
 
 pass_label = customtkinter.CTkLabel(master=frame, 
     text="*Preencha o campo acima para continuar", 
