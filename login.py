@@ -1,4 +1,4 @@
-import customtkinter as slva # pkg importation
+import customtkinter as ve # pkg importation
 from tkinter import * # pkg call
 from PIL import Image, ImageTk # pkg mges support
 
