@@ -38,12 +38,12 @@ username_label = ve.CTkLabel(master=frame,
     text_color="orange", 
     font=("JetBrains mono", 8)).place(x=25, y=135)
 
-pass_entry = ve.CTkEntry(master=frame, 
+password_entry = ve.CTkEntry(master=frame, 
     placeholder_text="Password", 
     width=300, 
     font=("JetBrains mono", 14), show="°").place(x=25, y=175)
 
-pass_label = ve.CTkLabel(master=frame, 
+password_label = ve.CTkLabel(master=frame, 
     text="*Preencha o campo acima para continuar", 
     text_color="orange", 
     font=("JetBrains mono", 8)).place(x=25, y=205)
