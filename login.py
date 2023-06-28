@@ -6,11 +6,11 @@ window = ve.CTk()
 
 class Login():
     def __init__(self):
+        self.theme()
         
-        pass
-
-    ve.set_appearance_mode("dark")
-    ve.set_default_color_theme("dark-blue")
+        def theme(self):
+            ve.set_appearance_mode("dark")
+            ve.set_default_color_theme("dark-blue")
 
     # window-box setup
     window.geometry("700x400")
