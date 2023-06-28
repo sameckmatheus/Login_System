@@ -2,6 +2,8 @@ import customtkinter as ve # pkg importation
 from tkinter import * # pkg call
 from PIL import Image, ImageTk # pkg mges support
 
+class Login():
+
 ve.set_appearance_mode("dark")
 ve.set_default_color_theme("dark-blue")
 
@@ -28,34 +30,16 @@ login_frame.pack(side=RIGHT)
 label = ve.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20))
 label.place(x=70, y=5)
 
-username_entry = ve.CTkEntry(master=login_frame, 
-    placeholder_text="Username", 
-    width=300, 
-    font=("JetBrains mono", 14)).place(x=25, y=105)
+username_entry = ve.CTkEntry(master=login_frame, placeholder_text="Username", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
 
-username_label = ve.CTkLabel(master=login_frame, 
-    text="*Preencha o campo acima para continuar", 
-    text_color="orange", 
-    font=("JetBrains mono", 8)).place(x=25, y=135)
+username_label = ve.CTkLabel(master=login_frame, text="*Preencha o campo acima para continuar", text_color="orange", font=("JetBrains mono", 8)).place(x=25, y=135)
 
-password_entry = ve.CTkEntry(master=login_frame, 
-    placeholder_text="Password", 
-    width=300, 
-    font=("JetBrains mono", 14), show="°").place(x=25, y=175)
+password_entry = ve.CTkEntry(master=login_frame, placeholder_text="Password", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=175)
 
-password_label = ve.CTkLabel(master=login_frame, 
-    text="*Preencha o campo acima para continuar", 
-    text_color="orange", 
-    font=("JetBrains mono", 8)).place(x=25, y=205)
+password_label = ve.CTkLabel(master=login_frame, text="*Preencha o campo acima para continuar", text_color="orange", font=("JetBrains mono", 8)).place(x=25, y=205)
 
-checkbox = ve.CTkCheckBox(master=login_frame, 
-    text="Lembre de mim!", 
-    font=("JetBrains mono", 10)).place(x=25, y=245)
+checkbox = ve.CTkCheckBox(master=login_frame, text="Lembre de mim!", font=("JetBrains mono", 10)).place(x=25, y=245)
 
-login_button = ve.CTkButton(master=login_frame, 
-    text="Login", 
-    width=300, 
-    font=("JetBrains mono", 10)).place(x=25, y=305)
+login_button = ve.CTkButton(master=login_frame, text="Login", width=300, font=("JetBrains mono", 10)).place(x=25, y=305)
 
-# open window
 window.mainloop()                                                
