@@ -7,9 +7,11 @@ window = ve.CTk()
 
 class Login():
     def __init__(self):
+        self.window=window
         self.theme()
         self.window()
         self.login_screen()
+        window.mainloop
         
     def theme(self):
         ve.set_appearance_mode("dark")
@@ -50,4 +52,4 @@ class Login():
 
         login_button = ve.CTkButton(master=login_frame, text="Login", width=300, font=("JetBrains mono", 10)).place(x=25, y=305)
 
-window.mainloop()                                                
+Login()                                              
