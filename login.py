@@ -8,7 +8,8 @@ window = ve.CTk()
 class Login():
     def __init__(self):
         self.theme()
-        self.window
+        self.window()
+        self.login_screen()
         
     def theme(self):
         ve.set_appearance_mode("dark")
@@ -20,6 +21,7 @@ class Login():
         window.iconbitmap("favicon.ico")
         window.resizable(False, False)
 
+    def login_screen():
         # img box-selector
         img = PhotoImage(file="images/log.png")
         Label_img = ve.CTkLabel(master=window, image=img)
