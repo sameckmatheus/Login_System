@@ -21,7 +21,7 @@ Label_img.configure(text='')
 label_title = ve.CTkLabel(master=window, text="Bem Vindos!", font=("JetBrains mono", 20)).place(x=105, y=10)
 
 # frame-box in window-box setup
-frame = ve.CTkFrame(master=window, width=350, height=396)
+login_frame = ve.CTkFrame(master=window, width=350, height=396)
 frame.pack(side=RIGHT)
 
 # frame widgets
