@@ -25,7 +25,7 @@ login_frame = ve.CTkFrame(master=window, width=350, height=396)
 login_frame.pack(side=RIGHT)
 
 # frame widgets
-label = ve.CTkLabel(master=frame, text="Sistema de Login", font=("JetBrains mono", 20))
+label = ve.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20))
 label.place(x=70, y=5)
 
 username_entry = ve.CTkEntry(master=login_frame, 
