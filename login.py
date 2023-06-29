@@ -50,6 +50,9 @@ class Application():
 
         checkbox = ctk.CTkCheckBox(master=login_frame, text="Lembre de mim!", font=("JetBrains mono", 10)).place(x=25, y=245)
 
-        login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, font=("JetBrains mono", 10)).place(x=25, y=305)
+        login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, font=("JetBrains mono", 10)).place(x=25, y=285)
+        
+        register_span = ctk.CTkLabel(master=login_frame, text="Ainda não tem uma conta?", font=("JetBrains mono", 10)).place(x=25, y=325)
+        register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se", width=150, font=("JetBrains mono", 10)).place(x=175, y=325)
 
 Application()                                              
