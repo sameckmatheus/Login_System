@@ -26,8 +26,7 @@ class Application():
     def login_screen():
         # img box-selector
         img = PhotoImage(file="images/log.png")
-        Label_img = ctk.CTkButton(master=window, image=img, text=None, hover=None, fg_color='transparent')
-        Label_img.place(x=25, y=65)
+        Label_img = ctk.CTkButton(master=window, image=img, text=None, hover=None, fg_color='transparent').place(x=25, y=65)
         Label_img.configure(text='')
 
         label_title = ctk.CTkLabel(master=window, text="Bem Vindos!", font=("JetBrains mono", 20)).place(x=105, y=10)
