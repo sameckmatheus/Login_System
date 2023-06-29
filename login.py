@@ -37,8 +37,7 @@ class Application():
         login_frame.pack(side=RIGHT)
 
         # frame widgets
-        label = ctk.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20))
-        label.place(x=70, y=5)
+        label = ctk.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=70, y=5)
 
         username_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Username", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
 
