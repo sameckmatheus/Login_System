@@ -60,6 +60,8 @@ class Application():
             # frame-box to register
             register_frame = ctk.CTkFrame(master=window, width=350, height=396)
             register_frame.pack(side=RIGHT)
+            
+            label = ctk.CTkLabel(master=register_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=105, y=5)
 
             pass
         register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se", fg_color='green', hover_color='#2D9334', width=150, command=Register_Screen , font=("JetBrains mono", 10)).place(x=175, y=325)
