@@ -54,7 +54,8 @@ class Application():
         register_span = ctk.CTkLabel(master=login_frame, text="Ainda não tem uma conta?", font=("JetBrains mono", 10)).place(x=25, y=325)
 
         def Register_Screen():
-
+            # Hide login_frame
+            login_frame.pack_forget()
             pass
         register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se", fg_color='green', hover_color='#2D9334', width=150, command=Register_Screen , font=("JetBrains mono", 10)).place(x=175, y=325)
 
