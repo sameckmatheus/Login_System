@@ -25,7 +25,7 @@ class Application():
 
     def login_screen():
         # img box-selector
-        img = PhotoImage(file="images/log.png")
+        img = PhotoImage(file="images/login.png")
         Label_img = ctk.CTkButton(master=window, image=img, text=None, hover=None, fg_color='transparent')
         Label_img.place(x=25, y=65)
         Label_img.configure(text='')
@@ -37,13 +37,13 @@ class Application():
         login_frame.pack(side=RIGHT)
 
         # frame widgets
-        label = ctk.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=70, y=5)
+        label = ctk.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=105, y=5)
 
-        username_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Username", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
+        username_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Nome de usuário", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
 
         username_label = ctk.CTkLabel(master=login_frame, text="* Preencha o campo acima para continuar", text_color="orange", font=("JetBrains mono", 10)).place(x=25, y=135)
 
-        password_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Password", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=175)
+        password_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=175)
 
         password_label = ctk.CTkLabel(master=login_frame, text="* Preencha o campo acima para continuar", text_color="orange", font=("JetBrains mono", 10)).place(x=25, y=205)
 
@@ -52,6 +52,10 @@ class Application():
         login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, font=("JetBrains mono", 10)).place(x=25, y=285)
         
         register_span = ctk.CTkLabel(master=login_frame, text="Ainda não tem uma conta?", font=("JetBrains mono", 10)).place(x=25, y=325)
-        register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se", fg_color='green', hover_color='#2D9334', width=150, font=("JetBrains mono", 10)).place(x=175, y=325)
+
+        def Register_Screen():
+
+            pass
+            register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se", fg_color='green', hover_color='#2D9334', width=150, command=Register_Screen , font=("JetBrains mono", 10)).place(x=175, y=325)
 
 Application()                                              
