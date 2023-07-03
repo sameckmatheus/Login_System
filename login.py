@@ -32,7 +32,7 @@ class Application():
 
         label_title = ctk.CTkLabel(master=window, text="Bem Vindos!", font=("JetBrains mono", 20)).place(x=105, y=10)
 
-        # frame-box in window-box setup
+        # frame-box to login
         login_frame = ctk.CTkFrame(master=window, width=350, height=396)
         login_frame.pack(side=RIGHT)
 
@@ -54,8 +54,13 @@ class Application():
         register_span = ctk.CTkLabel(master=login_frame, text="Ainda não tem uma conta?", font=("JetBrains mono", 10)).place(x=25, y=325)
 
         def Register_Screen():
-            # Hide login_frame
+            # hide login_frame
             login_frame.pack_forget()
+
+            # frame-box to register
+            register_frame = ctk.CTkFrame(master=window, width=350, height=396)
+            register_frame.pack(side=RIGHT)
+
             pass
         register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se", fg_color='green', hover_color='#2D9334', width=150, command=Register_Screen , font=("JetBrains mono", 10)).place(x=175, y=325)
 
