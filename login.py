@@ -20,14 +20,14 @@ class Application():
     def screen():
         window.geometry("700x400")
         window.title("Login")
-        window.iconbitmap("favicon.ico")
+        window.iconbitmap("images/login.png")
         window.resizable(False, False)
 
     def login_screen():
         # img box-selector
-        img = PhotoImage(file="images/log.png")
+        img = PhotoImage(file="images/scene-3.png")
         Label_img = ctk.CTkButton(master=window, image=img, text=None, hover=None, fg_color='transparent')
-        Label_img.place(x=25, y=65)
+        Label_img.place(x=-580, y=-160)
         Label_img.configure(text='')
 
         label_title = ctk.CTkLabel(master=window, text="Bem Vindos!", font=("JetBrains mono", 20)).place(x=105, y=10)
