@@ -20,7 +20,7 @@ class Application():
     def screen():
         window.geometry("700x400")
         window.title("Login")
-        window.iconbitmap("images/login.png")
+        window.iconbitmap("favicon.ico")
         window.resizable(False, False)
 
     def login_screen():
