@@ -25,7 +25,7 @@ class Application():
 
     def login_screen():
         # img box-selector
-        img = PhotoImage(file="images/scene-3.png")
+        img = PhotoImage(file="images/scene-4.png")
         Label_img = ctk.CTkButton(master=window, image=img, text=None, hover=None, fg_color='transparent')
         Label_img.place(x=-580, y=-160)
         Label_img.configure(text='')
