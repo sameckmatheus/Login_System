@@ -50,7 +50,12 @@ class Application():
 
         checkbox = ctk.CTkCheckBox(master=login_frame, text="Lembre de mim!", font=("JetBrains mono", 10)).place(x=25, y=245)
 
-        login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, hover_color='#275fcf', font=("JetBrains mono", 10)).place(x=25, y=285)
+        def login():
+            message = messagebox.showinfo(title="Atenção!", message="Login realizado com sucesso!")
+
+            pass
+
+        login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, hover_color='#275fcf', font=("JetBrains mono", 10), command=login).place(x=25, y=285)
         
         register_span = ctk.CTkLabel(master=login_frame, text="Ainda não tem uma conta?", font=("JetBrains mono", 10)).place(x=25, y=325)
 
