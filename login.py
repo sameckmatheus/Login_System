@@ -37,7 +37,7 @@ class Application():
         login_frame.pack(side=RIGHT)
 
         # frame widgets
-        label = ctk.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=105, y=5)
+        label = ctk.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=85, y=5)
 
         username_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Nome de usuário", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
 
@@ -60,6 +60,14 @@ class Application():
             # frame-box to register
             register_frame = ctk.CTkFrame(master=window, width=350, height=396)
             register_frame.pack(side=RIGHT)
+
+            username_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Digite seu nome de usuário", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
+
+            email_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Digte seu email", width=300, font=("JetBrains mono", 14)).place(x=25, y=135)
+
+            password_entry = ctk.CTkEntry(master=register_frame, placeholder_text="crie uma senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=165)
+
+            confirm_password_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Confirme sua senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=195)            
             
             label = ctk.CTkLabel(master=register_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=105, y=5)
 
