@@ -49,19 +49,21 @@ class Application():
 
         checkbox = ctk.CTkCheckBox(master=login_frame, text="Lembre de mim!", font=("JetBrains mono", 10)).place(x=25, y=245)
 
-        login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, font=("JetBrains mono", 10)).place(x=25, y=285)
+        login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, hover_color='#275fcf', font=("JetBrains mono", 10)).place(x=25, y=285)
         
         register_span = ctk.CTkLabel(master=login_frame, text="Ainda não tem uma conta?", font=("JetBrains mono", 10)).place(x=25, y=325)
 
         def Register_Screen():
-            # hide login_frame
+            # go to register
             login_frame.pack_forget()
 
             # frame-box to register
             register_frame = ctk.CTkFrame(master=window, width=350, height=396)
             register_frame.pack(side=RIGHT)
 
-            label = ctk.CTkLabel(master=register_frame, text="Cadastre-se!", font=("JetBrains mono", 20)).place(x=95, y=5)
+            label = ctk.CTkLabel(master=register_frame, text="Cadastre-se!", font=("JetBrains mono", 20)).place(x=105, y=5)
+
+            span = ctk.CTkLabel(master=register_frame, text="* Os campos abaixo são obrigatórios.", font=("Jetbrains mono", 10), text_color="gray").place(x=25, y=65)
 
             username_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Digite seu nome de usuário", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
 
@@ -73,10 +75,20 @@ class Application():
 
             checkbox = ctk.CTkCheckBox(master=register_frame, text="Li e concordo.", font=("JetBrains mono", 10)).place(x=25, y=265)
 
-            back_to_login = ctk.CTkButton(master=register_frame, text="Voltar para o login", width=145).place(x=25, y=305)
-            save_rg = ctk.CTkButton(master=register_frame, text="Cadastrar", fg_color='green', width=145).place(x=185, y=305)
+            def back():
+                # back to login
+                register_frame.pack_forget()
+                login_frame.pack(side=RIGHT)
+
+                pass
+
+            back_to_login = ctk.CTkButton(master=register_frame, text="Voltar para o login", hover_color='#275fcf', width=145, command=back).place(x=25, y=315)
+            save_rg = ctk.CTkButton(master=register_frame, text="Cadastrar", fg_color='green', hover_color='#40A130', width=145).place(x=185, y=315)
 
             pass
-        register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se!", fg_color='green', hover_color='#2D9334', width=150, command=Register_Screen , font=("JetBrains mono", 10)).place(x=175, y=325)
+
+        register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se!", fg_color='green', hover_color='#40A130', width=150, command=Register_Screen , font=("JetBrains mono", 10)).place(x=175, y=325)
+
+        pass
 
 Application()                                              
