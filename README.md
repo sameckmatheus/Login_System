@@ -1,9 +1,9 @@
-<h1 align="center"> Projeto de Tela de Login em Python </h1>
+<h1 align="center"> Projeto de Sistema de Login em Python </h1>
 
 <h2 align="center"> 
-    Este projeto consiste em criar uma tela de login em Python utilizando a biblioteca Tkinter
+    Este projeto consiste em criar um sistema de login em Python utilizando a biblioteca Tkinter
     <h4 align="justify"> 
-        A tela de login deve conter os seguintes elementos: 
+        O sistema de login deve conter os seguintes elementos: 
     </h4>
 </h2> 
 
