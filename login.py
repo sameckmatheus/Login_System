@@ -1,6 +1,7 @@
 import customtkinter as ctk # pkg importation
 from tkinter import * # pkg call
 from PIL import Image, ImageTk # pkg mges support
+from tkinter import messagebox # pkg to show messages
 
 # window-box setup
 window = ctk.CTk()
@@ -83,7 +84,12 @@ class Application():
                 pass
 
             back_to_login = ctk.CTkButton(master=register_frame, text="Voltar para o login", hover_color='#275fcf', width=145, command=back).place(x=25, y=315)
-            save_rg = ctk.CTkButton(master=register_frame, text="Cadastrar", fg_color='green', hover_color='#40A130', width=145).place(x=185, y=315)
+
+            def save_user():
+                message = messagebox.showinfo()
+
+                pass
+            save_rg = ctk.CTkButton(master=register_frame, text="Cadastrar", fg_color='green', hover_color='#40A130', width=145, command=save_user).place(x=185, y=315)
 
             pass
 
