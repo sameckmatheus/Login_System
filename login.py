@@ -63,13 +63,13 @@ class Application():
 
             username_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Digite seu nome de usuário", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
 
-            email_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Digte seu email", width=300, font=("JetBrains mono", 14)).place(x=25, y=135)
+            email_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Digte seu email", width=300, font=("JetBrains mono", 14)).place(x=25, y=145)
 
-            password_entry = ctk.CTkEntry(master=register_frame, placeholder_text="crie uma senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=165)
+            password_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Crie uma senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=185)
 
-            confirm_password_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Confirme sua senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=195)            
+            confirm_password_entry = ctk.CTkEntry(master=register_frame, placeholder_text="Confirme sua senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=225)            
             
-            label = ctk.CTkLabel(master=register_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=105, y=5)
+            label = ctk.CTkLabel(master=register_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=85, y=5)
 
             pass
         register_button = ctk.CTkButton(master=login_frame, text="Cadastre-se", fg_color='green', hover_color='#2D9334', width=150, command=Register_Screen , font=("JetBrains mono", 10)).place(x=175, y=325)
