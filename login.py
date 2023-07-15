@@ -90,10 +90,12 @@ class Application():
 
             back_to_login = ctk.CTkButton(master=register_frame, text="Voltar para o login", hover_color='#275fcf', width=145, command=back).place(x=25, y=315)
 
+            # save user
             def save_user():
                 message = messagebox.showinfo(title="Atenção!", message="Usuário cadastrado com sucesso!")
 
                 pass
+            
             save_rg = ctk.CTkButton(master=register_frame, text="Cadastrar", fg_color='green', hover_color='#40A130', width=145, command=save_user).place(x=185, y=315)
 
             pass
