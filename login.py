@@ -1,7 +1,8 @@
-import customtkinter as ctk # pkg importation
-from tkinter import * # pkg call
-from PIL import Image, ImageTk # pkg mges support
-from tkinter import messagebox # pkg to show messages
+import customtkinter as ctk
+from tkinter import *
+from PIL import Image, ImageTk
+import database
+from tkinter import messagebox
 
 # window-box setup
 window = ctk.CTk()
