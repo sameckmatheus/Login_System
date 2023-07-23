@@ -38,3 +38,5 @@ if __name__ == "__main__":
             ConfirmPassword TEXT NOT NULL        
         )
     """)
+
+    print("Successful Database Connection...")
