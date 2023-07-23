@@ -28,3 +28,13 @@ if __name__ == "__main__":
 
     database_connection = SQLiteConnection(config=database_config)
     database_connection.connect()
+
+    database_connection.execute_query("""
+        CREATE TABLE IF NOT EXISTS users (
+            Id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+            UserName TEXT NOT NULL,
+            Email TEXT NOT NULL,
+            Password TEXT NOT NULL,
+            ConfirmPassword TEXT NOT NULL        
+        )
+    """)
