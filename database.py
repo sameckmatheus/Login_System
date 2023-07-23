@@ -1,5 +1,9 @@
 import sqlite3
 
+class DatabaseConfig:
+    def __init__(self, database_name):
+        self.database_name = database_name 
+
 database_connection = sqlite3.Connection('database')
 cursor = database_connection.cursor()
 
