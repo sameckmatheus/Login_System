@@ -15,6 +15,20 @@ O sistema de login deve conter os seguintes elementos:
 
 Ao clicar no botão de login, o programa deve verificar se o nome de usuário ou e-mail e a senha estão corretos. Se estiverem corretos, o programa deve permitir o acesso do usuário a uma área restrita do sistema. Caso contrário, o programa deve exibir uma mensagem de erro e pedir que o usuário tente novamente.
 
+## Bibliotecas Utilizadas
+
+### Tkinter
+
+O Tkinter é uma biblioteca gráfica padrão do Python que permite criar interfaces gráficas de usuário (GUI - Graphical User Interface). Ele oferece diversos widgets, como botões, caixas de texto, rótulos e outros elementos, que podem ser usados para construir interfaces de forma intuitiva e interativa.
+
+### Pillow
+
+O Pillow é uma biblioteca Python para processamento de imagens. Neste projeto, o Pillow é utilizado para exibir a imagem de exemplo na interface gráfica do sistema de login. Além disso, ele pode ser utilizado para redimensionar, cortar, converter e manipular imagens de diversas formas.
+
+### Banco de Dados SQLite3
+
+O SQLite3 é um banco de dados leve e embutido em Python. Neste projeto, o SQLite3 é utilizado para armazenar e gerenciar os dados de login dos usuários. Ele é uma opção adequada para projetos menores e que não requerem um sistema de gerenciamento de banco de dados mais complexo. O SQLite3 é amplamente utilizado por sua simplicidade e facilidade de uso.
+
 ## Pré-requisitos
 
 - Python 3 instalado no sistema.
@@ -24,19 +38,19 @@ Ao clicar no botão de login, o programa deve verificar se o nome de usuário ou
 1. Clone o repositório para o seu ambiente local:
 
    ```
-   git clone https://github.com/seu-usuario/projeto-sistema-login.git
+   git clone https://github.com/sameckmatheus/Login_System.git
    ```
 
 2. Acesse o diretório do projeto:
 
    ```
-   cd projeto-sistema-login
+   cd Login_System
    ```
 
 3. Execute o programa:
 
    ```
-   python main.py
+   python login.py
    ```
 
 ## Contribuindo
