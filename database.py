@@ -5,10 +5,18 @@ class DatabaseConfig:
         self.database_name = database_name
 
 class DatabaseConnection:
-    def connection(self):
+    def connect(self):
         pass
+
     def execute_query(self, query):
         pass
+
+class SQLiteConnection(DatabaseConnection):
+    def __init__(self, config):
+        self.config = config
+
+    def connect(self):
+        self.connection = sqlite3.connect(self.config.database_name)
 
 database_connection = sqlite3.Connection('database')
 cursor = database_connection.cursor()
