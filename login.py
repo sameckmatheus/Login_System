@@ -1,7 +1,7 @@
 import customtkinter as ctk
 from tkinter import *
 from PIL import Image, ImageTk
-import database
+import sqlite_database
 from tkinter import messagebox
 
 # window-box setup

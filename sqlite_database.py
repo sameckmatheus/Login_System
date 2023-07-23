@@ -25,4 +25,6 @@ class SQLiteConnection(DatabaseConnection):
 
 if __name__ == "__main__":
     database_config = DatabaseConfig(database_name='database.sqlite')
-    
+
+    database_connection = SQLiteConnection(config=database_config)
+    database_connection.connect()
