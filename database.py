@@ -22,3 +22,7 @@ class SQLiteConnection(DatabaseConnection):
         cursor = self.connection.cursor()
         cursor.execute(query)
         self.connection.commit()
+
+if __name__ == "__main__":
+    database_config = DatabaseConfig(database_name='database.sqlite')
+    
