@@ -42,11 +42,9 @@ class Application():
         label = ctk.CTkLabel(master=login_frame, text="Sistema de Login", font=("JetBrains mono", 20)).place(x=85, y=5)
 
         username_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Nome de usuário", width=300, font=("JetBrains mono", 14)).place(x=25, y=105)
-
         username_label = ctk.CTkLabel(master=login_frame, text="* Preencha o campo acima para continuar", text_color="orange", font=("JetBrains mono", 10)).place(x=25, y=135)
 
         password_entry = ctk.CTkEntry(master=login_frame, placeholder_text="Senha", width=300, font=("JetBrains mono", 14), show="°").place(x=25, y=175)
-
         password_label = ctk.CTkLabel(master=login_frame, text="* Preencha o campo acima para continuar", text_color="orange", font=("JetBrains mono", 10)).place(x=25, y=205)
 
         checkbox = ctk.CTkCheckBox(master=login_frame, text="Lembre de mim!", font=("JetBrains mono", 10)).place(x=25, y=245)
