@@ -13,6 +13,7 @@ class DatabaseConnection:
 
 class SQLiteConnection(DatabaseConnection):
     def __init__(self, config):
+        self.connection = None
         self.config = config
 
     def connect(self):
@@ -23,8 +24,9 @@ class SQLiteConnection(DatabaseConnection):
         cursor.execute(query)
         self.connection.commit()
 
+
 if __name__ == "__main__":
-    database_config = DatabaseConfig(database_name='database.sqlite')
+    database_config = DatabaseConfig(database_name="database.sqlite")
 
     database_connection = SQLiteConnection(config=database_config)
     database_connection.connect()
