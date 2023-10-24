@@ -3,7 +3,6 @@ from tkinter import messagebox
 from typing import Any
 import customtkinter as ctk
 
-# window-box setup
 window = ctk.CTk()
 
 
@@ -14,18 +13,18 @@ def screen():
     window.resizable(False, False)
 
 
+def theme():
+    ctk.set_appearance_mode("dark")
+    ctk.set_default_color_theme("dark-blue")
+
+
 class Application:
     def __init__(self):
         self.window = window
-        self.theme()
+        theme()
         screen()
         login_screen()
         window.mainloop()
-
-    @staticmethod
-    def theme():
-        ctk.set_appearance_mode("dark")
-        ctk.set_default_color_theme("dark-blue")
 
 
 def login_screen():
@@ -59,7 +58,6 @@ def login_screen():
 
     def login():
         messagebox.showinfo(title="Atenção!", message="Login realizado com sucesso!")
-
 
     ctk.CTkButton(master=login_frame, text="Login", width=300, hover_color='#275fcf',
                   font=("JetBrains mono", 10), command=login).place(x=25, y=285)
@@ -101,7 +99,6 @@ def login_screen():
             register_frame.pack_forget()
             login_frame.pack(side=RIGHT)
 
-
         ctk.CTkButton(master=register_frame, text="Voltar para o login", hover_color='#275fcf',
                       width=145, command=back).place(x=25, y=315)
 
@@ -109,10 +106,8 @@ def login_screen():
         def save_user():
             messagebox.showinfo(title="Atenção!", message="Usuário cadastrado com sucesso!")
 
-
         ctk.CTkButton(master=register_frame, text="Cadastrar", fg_color='green', hover_color='#40A130',
                       width=145, command=save_user).place(x=185, y=315)
-
 
     ctk.CTkButton(master=login_frame, text="Cadastre-se!", fg_color='green',
                   hover_color="#40A130", width=150, font=("JetBrains mono", 10),
