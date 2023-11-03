@@ -7,7 +7,7 @@ from tkinter import messagebox
 # window-box setup
 window = ctk.CTk()
 
-class Application():
+class Application:
     def __init__(self):
         self.window=window
         self.theme()
@@ -15,7 +15,8 @@ class Application():
         Application.login_screen()
         window.mainloop()
         
-    def theme(self):
+    @staticmethod
+    def theme():
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("dark-blue")
         
@@ -52,7 +53,6 @@ class Application():
         def login():
             message = messagebox.showinfo(title="Atenção!", message="Login realizado com sucesso!")
 
-            pass
 
         login_button = ctk.CTkButton(master=login_frame, text="Login", width=300, hover_color='#275fcf', font=("JetBrains mono", 10), command=login).place(x=25, y=285)
         
